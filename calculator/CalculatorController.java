@@ -2,7 +2,7 @@ package calculator;
 
 public class CalculatorController {
     public int excute(CalculatorDTO calc) {
-        CalculatorService service = new CalculatorService();
+        CalculatorService service = new CalculatorServiceImpl();
         int res=0;
         
         switch(calc.getOpcode()) {

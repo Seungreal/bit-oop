@@ -1,10 +1,10 @@
 package calculator;
 
 public class CalculatorDTO {
-    int num1;
-    int num2;
-    int result;
-    String opcode;
+    private int num1;
+    private int num2;
+    private int result;
+    private String opcode;
     
     public int getNum1() {
         return num1;
@@ -36,5 +36,5 @@ public class CalculatorDTO {
     
     public void setOpcode(String opcode) {
         this.opcode = opcode;
-    }   
+    }
 }

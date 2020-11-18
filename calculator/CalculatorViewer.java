@@ -3,8 +3,7 @@ package calculator;
 import java.util.Scanner;
 
 public class CalculatorViewer {
-    public void starCalc() {
-        Scanner scan = new Scanner(System.in);
+    public void starCalc(Scanner scan) {
         CalculatorDTO calc = new CalculatorDTO();
         CalculatorController controll = new CalculatorController();
         
