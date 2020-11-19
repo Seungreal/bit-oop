@@ -40,4 +40,13 @@ public class LottoController {
             return "총 "+score+"개 맞추셨습니다. 꽝입니다.";
         }
     }
+    
+    public boolean selclotto(LottoDTO l,int number) {
+        LottoService service = new LottoServiceImpl();
+        if(service.dupl(l.getUserNumbers(), number))
+            return false;
+        service.addNumbers(l.getUserNumbers(), number);
+        service.sortNumbers(l.getUserNumbers());
+        return true;
+    }
 }
